@@ -38,6 +38,12 @@ Or if you want to add 4 coins:
 
 Be aware that the username is case sensitive.
 
+## Public commands
+
+### !scores
+
+This prints the current scorelist. This is the same as clicking the prim.
+
 ## License
 
 - You are free to use and modify this script for personal usage.

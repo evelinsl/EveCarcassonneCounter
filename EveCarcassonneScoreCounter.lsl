@@ -42,8 +42,6 @@ processOwnerMessage(string message)
         integer score = parseScore(llList2String(tokens, 1));
         string username = llDumpList2String(llList2List(tokens, 2, 4), " ");
         
-        llSay(0, "SCORE: " + (string)score + " username: " + username);
-        
         if(score == 0 || username == "")
         {
             llSay(0, "Computer says no");
@@ -52,12 +50,6 @@ processOwnerMessage(string message)
         
         addScore(username, score, 1);
     }
-    
-    if(command == "!scores")
-        PrintScoreList();
-        
-    if(command == "!dump")
-        DumpList();
 }
 
 
@@ -217,9 +209,13 @@ default
     {   
         if(channel != 0)
             return;
+         
+        if(message == "!scores")
+            PrintScoreList();       
             
-        if(id == llGetOwner())
+        else if(id == llGetOwner())
             processOwnerMessage(message);
+        
         else if(name == carcassonneName) 
             processMessage(message);
     }
