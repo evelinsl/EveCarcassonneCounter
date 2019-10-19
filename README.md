@@ -2,7 +2,7 @@
 
 The EveCarcassonneCounter is a little helper script that manages a scorelist of coins collected in the Carcassonne Table game.
 
-Why? Because the "Carcassonne Table" is a little buggy and removes the scores at the end of the game.
+Why? Because the "Carcassonne Table" is still alpha (buggy) and removes the scores at the end of the game (https://winterwolf.github.io/carcassonne/)
 
 ## Usage
 
